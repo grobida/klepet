@@ -49,7 +49,7 @@ Klepet.prototype.procesirajUkaz = function(ukaz) {
         this.socket.emit('dregljaj', vzdevek1);
         sporocilo = 'Dregljaj za ' + vzdevek1;
       }
-      else
+      else 
         sporocilo = "Neznan ukaz";
       break;
     default:
