@@ -44,10 +44,10 @@ Klepet.prototype.procesirajUkaz = function(ukaz) {
       }
     case 'dregljaj':
       besede.shift();
-      var vzdevek = besede.join(' ');
-      if(vzdevek) {
-        this.socket.emit('dregljaj', vzdevek);
-        sporocilo = 'Dregljaj za ' + vzdevek;
+      var vzdevek1 = besede.join(' ');
+      if(vzdevek1) {
+        this.socket.emit('dregljaj', vzdevek1);
+        sporocilo = 'Dregljaj za ' + vzdevek1;
       }
       else
         sporocilo = "Neznan ukaz";
