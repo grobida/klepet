@@ -115,6 +115,16 @@ $(document).ready(function() {
     
   });
 
+  socket.on('dregljaj', function() {
+    $('#vsebina').jrumble();
+    $('#vsebina').trigger('startRumble');
+    
+    var delay = 1500;
+    setTimeout(function(){
+    $('#vsebina').trigger('stopRumble');
+    }, delay);
+  });
+
   setInterval(function() {
     socket.emit('kanali');
     socket.emit('uporabniki', {kanal: trenutniKanal});
