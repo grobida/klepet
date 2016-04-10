@@ -44,7 +44,11 @@ a {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 #seznam-kanalov div:hover, #seznam-uporabnikov div:hover {
+=======
+#seznam-kanalov div:hover, #seznam-uporabnikov div:hover{
+>>>>>>> zasebna
   background-color: #ddd;
 }
 
